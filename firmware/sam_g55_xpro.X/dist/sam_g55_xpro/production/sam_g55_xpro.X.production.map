@@ -1,0 +1,946 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+                              build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o (__pic32c_data_initialization)
+c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+                              build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o (__libc_init_array)
+c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                              build/sam_g55_xpro/production/_ext/749951358/plib_efc.o (memcpy)
+c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+                              build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o (memset)
+c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+                              build/sam_g55_xpro/production/_ext/1360937237/main.o (strcmp)
+
+Allocating common symbols
+Common symbol       size              file
+
+rsp_buf             0x80              build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+cmd_buf             0x49              build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+payload             0x21              build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+receiveBuffer       0xff              build/sam_g55_xpro/production/_ext/1360937237/main.o
+
+Microchip PIC32 Memory-Usage Report
+
+ROM Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.vectors                  0x400000          0x108         264   
+.text                     0x400108           0x20          32  App's exec code 
+.rodata.IS1678_reHex      0x400128        0x50000      327680   
+.text.BM78_DFU            0x450128          0x5a0        1440   
+.rodata.crc_table         0x4506c8          0x200         512   
+.text.main                0x4508c8          0x12c         300   
+.dinit                    0x4509f4          0x100         256   
+.text.CLOCK_Initialize    0x450af4           0xa4         164   
+.text.Reset_Handler       0x450b98           0x98         152   
+.text.__pic32c_data_ini   0x450c30           0x80         128   
+.text.PIO_Initialize      0x450cb0           0x6c         108   
+.text.BM78_DFU_ReadResp   0x450d1c           0x6a         106   
+.text.Dummy_Handler       0x450d86            0x2           2   
+.text.FLEXCOM7_USART_Re   0x450d88           0x54          84   
+.text.FLEXCOM0_USART_Re   0x450ddc           0x54          84   
+.text.__libc_init_array   0x450e30           0x48          72   
+.text.FLEXCOM7_USART_Er   0x450e78           0x44          68   
+.text.FLEXCOM0_USART_Er   0x450ebc           0x44          68   
+.text                     0x450f00           0x40          64  App's exec code 
+.text.FLEXCOM7_USART_Wr   0x450f40           0x3c          60   
+.text.FLEXCOM0_USART_Wr   0x450f7c           0x3c          60   
+.rodata                   0x450fb8           0x3c          60  Read-only const 
+.text.crc_calc            0x450ff4           0x30          48   
+.text.SYS_Initialize      0x451024           0x28          40   
+.text.FLEXCOM7_USART_In   0x45104c           0x24          36   
+.text.FLEXCOM0_USART_In   0x451070           0x24          36   
+.text.NVIC_Initialize     0x451094           0x24          36   
+.text                     0x4510b8           0x14          20  App's exec code 
+.text.EFC_Initialize      0x4510cc           0x10          16   
+.text.FLEXCOM7_USART_Re   0x4510dc           0x10          16   
+.text.FLEXCOM0_USART_Re   0x4510ec           0x10          16   
+.text.memset              0x4510fc           0x10          16   
+.rodata.IS1678_reHex_si   0x45110c            0x4           4   
+.text.NonMaskableInt_Ha   0x451110            0x2           2   
+.text.HardFault_Handler   0x451112            0x2           2   
+.text.DebugMonitor_Hand   0x451114            0x2           2   
+.text.MemoryManagement_   0x451116            0x2           2   
+.text.BusFault_Handler    0x451118            0x2           2   
+.text.UsageFault_Handle   0x45111a            0x2           2   
+      Total ROM used  :     0x5111c      332060  63.3% of 0x80000
+        --------------------------------------------------------------------------
+         Total Program Memory used  :     0x5111c      332060  63.3% of 0x80000
+        --------------------------------------------------------------------------
+
+
+RAM Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.bss                    0x20000000          0x1f0         496  Uninitialized data 
+.data.messageStart      0x200001f0           0x3b          59   
+.bss.data               0x2000022b            0x1           1   
+.data.errorMessage      0x2000022c           0x2f          47   
+.bss.rxCounter          0x2000025b            0x1           1   
+.bss                    0x2000025c           0x1c          28  Uninitialized data 
+.data.image             0x20000278            0x4           4   
+.data.image_size        0x2000027c            0x4           4   
+.bss.flash_id           0x20000280            0x2           2   
+         Total RAM used  :       0x282         642  0.4% of 0x28000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :       0x282         642  0.4% of 0x28000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0x20000288          0x200         512  Reserved for heap 
+stack                   0x200004a0        0x27b50      162640  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+ .data          0x0000000000000000        0x4 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text.CMCC_Disable
+                0x0000000000000000       0x18 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text.CMCC_EnableICache
+                0x0000000000000000       0x28 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text.CMCC_DisableICache
+                0x0000000000000000       0x28 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text.CMCC_EnableDCache
+                0x0000000000000000       0x28 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text.CMCC_DisableDCache
+                0x0000000000000000       0x28 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text.CMCC_InvalidateAll
+                0x0000000000000000       0x20 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_info    0x0000000000000000      0x59e build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_abbrev  0x0000000000000000       0x93 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_aranges
+                0x0000000000000000       0x48 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_ranges  0x0000000000000000       0x38 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_line    0x0000000000000000      0x1c8 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_str     0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .comment       0x0000000000000000       0x3d build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .debug_frame   0x0000000000000000       0x70 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .ARM.attributes
+                0x0000000000000000       0x39 build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_Read
+                0x0000000000000000       0x10 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_SectorErase
+                0x0000000000000000       0x2c build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_PageWrite
+                0x0000000000000000       0x58 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_QuadWordWrite
+                0x0000000000000000       0x48 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_RegionLock
+                0x0000000000000000       0x2c build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_RegionUnlock
+                0x0000000000000000       0x2c build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_IsBusy
+                0x0000000000000000       0x20 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text.EFC_ErrorGet
+                0x0000000000000000       0x18 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .bss.status    0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .text.FLEXCOM7_USART_SerialSetup
+                0x0000000000000000       0x6c build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .text.FLEXCOM7_USART_ReadByte
+                0x0000000000000000        0xc build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .text.FLEXCOM7_USART_WriteByte
+                0x0000000000000000       0x14 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .text.FLEXCOM7_USART_TransmitComplete
+                0x0000000000000000       0x10 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .text.FLEXCOM7_USART_TransmitterIsReady
+                0x0000000000000000       0x10 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .text.FLEXCOM0_USART_SerialSetup
+                0x0000000000000000       0x6c build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .text.FLEXCOM0_USART_ReadByte
+                0x0000000000000000        0xc build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .text.FLEXCOM0_USART_WriteByte
+                0x0000000000000000       0x14 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .text.FLEXCOM0_USART_TransmitComplete
+                0x0000000000000000       0x10 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .text.FLEXCOM0_USART_TransmitterIsReady
+                0x0000000000000000       0x10 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortRead
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortWrite
+                0x0000000000000000        0xc build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortLatchRead
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortSet
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortClear
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortToggle
+                0x0000000000000000        0x8 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortInputEnable
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text.PIO_PortOutputEnable
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .text._mon_getc
+                0x0000000000000000        0x4 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .text._mon_putc
+                0x0000000000000000        0x2 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_info    0x0000000000000000      0x2c7 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_abbrev  0x0000000000000000       0x75 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_loc     0x0000000000000000       0x21 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_aranges
+                0x0000000000000000       0x28 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_ranges  0x0000000000000000       0x18 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_line    0x0000000000000000       0x6f build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_str     0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .comment       0x0000000000000000       0x3d build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .debug_frame   0x0000000000000000       0x30 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .ARM.attributes
+                0x0000000000000000       0x39 build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .text._exit    0x0000000000000000        0x2 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_info    0x0000000000000000      0xee0 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_abbrev  0x0000000000000000      0x1a8 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_aranges
+                0x0000000000000000       0x20 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_ranges  0x0000000000000000       0x10 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_line    0x0000000000000000      0x1d4 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_str     0x0000000000000000        0xe build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .comment       0x0000000000000000       0x3d build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .debug_frame   0x0000000000000000       0x20 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .ARM.attributes
+                0x0000000000000000       0x39 build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+ .text          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .data          0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .bss           0x0000000000000000        0x0 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .data.newline  0x0000000000000000        0x3 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x0000000000000000       0x16 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_info    0x0000000000000000      0xe79 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_abbrev  0x0000000000000000      0x17c c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_loc     0x0000000000000000       0xb2 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_aranges
+                0x0000000000000000       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_ranges  0x0000000000000000       0x10 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_line    0x0000000000000000      0x218 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_str     0x0000000000000000        0x9 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .comment       0x0000000000000000       0x3d c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000000       0x28 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+ .comment       0x0000000000000000       0x3d c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x0000000000400000 0x0000000000080000 xrl
+ram              0x0000000020000000 0x0000000000028000 xw !r
+config_D0000000  0x00000000d0000000 0x0000000000000004
+config_D0000004  0x00000000d0000004 0x0000000000000004
+config_D0000008  0x00000000d0000008 0x0000000000000004
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+LOAD build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+LOAD build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+LOAD build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+LOAD build/sam_g55_xpro/production/_ext/1773602862/plib_cmcc.o
+LOAD build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+LOAD build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+LOAD build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+LOAD build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+LOAD build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+LOAD build/sam_g55_xpro/production/_ext/383389446/xc32_monitor.o
+LOAD build/sam_g55_xpro/production/_ext/712618688/initialization.o
+LOAD build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+LOAD build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+LOAD build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+LOAD build/sam_g55_xpro/production/_ext/712618688/libc_syscalls.o
+LOAD build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x0000000000000001                __MPLAB_BUILD = 0x1
+                0x0000000000480000                __rom_end = (ORIGIN (rom) + LENGTH (rom))
+                0x0000000020028000                __ram_end = (ORIGIN (ram) + LENGTH (ram))
+
+.config_D0000000
+                0x00000000d0000000        0x4
+ *(.config_D0000000)
+ .config_D0000000
+                0x00000000d0000000        0x4 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+
+.config_D0000004
+ *(.config_D0000004)
+
+.config_D0000008
+ *(.config_D0000008)
+
+.vectors        0x0000000000400000      0x108
+                0x0000000000400000                . = ALIGN (0x4)
+                0x0000000000400000                _sfixed = .
+ *(.vectors .vectors.* .vectors_default .vectors_default.*)
+ .vectors       0x0000000000400000      0x108 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+                0x0000000000400000                exception_table
+ *(.isr_vector)
+ *(.reset*)
+ *(.after_vectors)
+
+.text           0x0000000000400108       0x20
+                0x0000000000400108                . = ALIGN (0x4)
+ *(.glue_7t)
+ .glue_7t       0x0000000000400108        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000400108        0x0 linker stubs
+ *(.gnu.linkonce.r.*)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000000400108                . = ALIGN (0x4)
+ *(.init)
+ .init          0x0000000000400108        0x4 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000000400108                _init
+ .init          0x000000000040010c        0x8 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+                0x0000000000400114                . = ALIGN (0x4)
+                0x0000000000400114                __preinit_array_start = .
+ *(.preinit_array)
+                0x0000000000400114                __preinit_array_end = .
+                0x0000000000400114                . = ALIGN (0x4)
+                0x0000000000400114                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000000400114        0x4 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0000000000400118                __init_array_end = .
+                0x0000000000400118                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x0000000000400118                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x0000000000400118        0x4 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000000400118                _fini
+ .fini          0x000000000040011c        0x8 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+                0x0000000000400124                . = ALIGN (0x4)
+                0x0000000000400124                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x0000000000400124        0x4 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x0000000000400128                __fini_array_end = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x0000000000400128                . = ALIGN (0x4)
+                0x0000000000400128                _efixed = .
+                [!provide]                        PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end, .)
+                0x0000000000400128                . = ALIGN (0x4)
+                0x0000000000400128                _etext = .
+
+.bss            0x0000000020000000      0x1f0
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __bss_start__ = .
+                0x0000000020000000                _sbss = .
+                0x0000000020000000                _szero = .
+ *(COMMON)
+ COMMON         0x0000000020000000       0xed build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x0000000020000000                rsp_buf
+                0x0000000020000080                cmd_buf
+                0x00000000200000cc                payload
+ *fill*         0x00000000200000ed        0x3 
+ COMMON         0x00000000200000f0       0xff build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x00000000200000f0                receiveBuffer
+                0x00000000200001f0                . = ALIGN (0x4)
+ *fill*         0x00000000200001ef        0x1 
+                0x00000000200001f0                __bss_end__ = .
+                0x00000000200001f0                _ebss = .
+                0x00000000200001f0                _ezero = .
+                0x00000000200001f0                . = ALIGN (0x4)
+                0x00000000200001f0                _end = .
+                0x0000000020027fff                _ram_end_ = ((ORIGIN (ram) + LENGTH (ram)) - 0x1)
+                0x0000000000000200                _min_heap_size = 0x200
+START GROUP
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm_nano.a
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a
+END GROUP
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+LOAD c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+OUTPUT(dist/sam_g55_xpro/production/sam_g55_xpro.X.production.elf elf32-littlearm)
+LOAD stack
+LOAD data_init
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ .ARM.attributes
+                0x0000000000000000       0x22 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crti.o
+ .ARM.attributes
+                0x0000000000000022       0x34 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000056       0x39 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .ARM.attributes
+                0x000000000000008f       0x39 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .ARM.attributes
+                0x00000000000000c8       0x39 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .ARM.attributes
+                0x0000000000000101       0x39 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .ARM.attributes
+                0x000000000000013a       0x39 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .ARM.attributes
+                0x0000000000000173       0x39 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .ARM.attributes
+                0x00000000000001ac       0x39 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .ARM.attributes
+                0x00000000000001e5       0x39 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .ARM.attributes
+                0x000000000000021e       0x39 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .ARM.attributes
+                0x0000000000000257       0x39 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .ARM.attributes
+                0x0000000000000290       0x39 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .ARM.attributes
+                0x00000000000002c9       0x39 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .ARM.attributes
+                0x0000000000000302       0x39 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .ARM.attributes
+                0x000000000000033b       0x34 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .ARM.attributes
+                0x000000000000036f       0x34 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000003a3       0x34 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000000003d7       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x00000000000003f7       0x22 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
+
+.comment        0x0000000000000000       0x3c
+ .comment       0x0000000000000000       0x3c c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+                                         0x3d (size before relaxing)
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .comment       0x000000000000003c       0x3d build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .comment       0x000000000000003c       0x3d c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .comment       0x000000000000003c       0x3d c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .comment       0x000000000000003c       0x3d c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+
+.debug_info     0x0000000000000000     0xbe63
+ .debug_info    0x0000000000000000     0x18ad build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_info    0x00000000000018ad      0x2d8 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .debug_info    0x0000000000001b85      0x932 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_info    0x00000000000024b7     0x1304 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_info    0x00000000000037bb      0xf6c build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_info    0x0000000000004727      0xf6c build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_info    0x0000000000005693      0x694 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_info    0x0000000000005d27      0xdeb build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_info    0x0000000000006b12      0x49a build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_info    0x0000000000006fac      0xaf2 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_info    0x0000000000007a9e      0x442 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_info    0x0000000000007ee0      0x917 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_info    0x00000000000087f7     0x18b2 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_info    0x000000000000a0a9      0x2a2 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_info    0x000000000000a34b      0x430 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_info    0x000000000000a77b     0x15bf c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_info    0x000000000000bd3a      0x129 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+
+.debug_abbrev   0x0000000000000000     0x157d
+ .debug_abbrev  0x0000000000000000      0x253 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_abbrev  0x0000000000000253       0x56 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .debug_abbrev  0x00000000000002a9       0xdc build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_abbrev  0x0000000000000385      0x2b4 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_abbrev  0x0000000000000639      0x23e build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_abbrev  0x0000000000000877      0x23e build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_abbrev  0x0000000000000ab5      0x12f build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_abbrev  0x0000000000000be4      0x155 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_abbrev  0x0000000000000d39       0xb6 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_abbrev  0x0000000000000def       0xaf build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_abbrev  0x0000000000000e9e       0x61 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_abbrev  0x0000000000000eff      0x1ac build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_abbrev  0x00000000000010ab      0x281 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_abbrev  0x000000000000132c       0x2a c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_abbrev  0x0000000000001356       0xa3 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_abbrev  0x00000000000013f9      0x170 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000001569       0x14 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+
+.debug_loc      0x0000000000000000     0x1c7b
+ .debug_loc     0x0000000000000000      0xafc build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_loc     0x0000000000000afc      0x31f build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_loc     0x0000000000000e1b      0x5d6 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_loc     0x00000000000013f1      0x5d6 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_loc     0x00000000000019c7       0x3d build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_loc     0x0000000000001a04       0xb0 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_loc     0x0000000000001ab4       0x41 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_loc     0x0000000000001af5       0x34 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_loc     0x0000000000001b29       0x92 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_loc     0x0000000000001bbb       0x74 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_loc     0x0000000000001c2f       0x4c c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+
+.debug_aranges  0x0000000000000000      0x360
+ .debug_aranges
+                0x0000000000000000       0x30 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_aranges
+                0x0000000000000030       0x18 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .debug_aranges
+                0x0000000000000048       0x20 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_aranges
+                0x0000000000000068       0x60 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_aranges
+                0x00000000000000c8       0x68 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_aranges
+                0x0000000000000130       0x68 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_aranges
+                0x0000000000000198       0x20 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_aranges
+                0x00000000000001b8       0x60 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_aranges
+                0x0000000000000218       0x20 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_aranges
+                0x0000000000000238       0x20 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_aranges
+                0x0000000000000258       0x48 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_aranges
+                0x00000000000002a0       0x20 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_aranges
+                0x00000000000002c0       0x20 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_aranges
+                0x00000000000002e0       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_aranges
+                0x0000000000000300       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_aranges
+                0x0000000000000320       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_aranges
+                0x0000000000000340       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+
+.debug_ranges   0x0000000000000000      0x238
+ .debug_ranges  0x0000000000000000       0x20 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_ranges  0x0000000000000020       0x10 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_ranges  0x0000000000000030       0x50 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_ranges  0x0000000000000080       0x58 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_ranges  0x00000000000000d8       0x58 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_ranges  0x0000000000000130       0x10 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_ranges  0x0000000000000140       0x50 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_ranges  0x0000000000000190       0x10 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_ranges  0x00000000000001a0       0x10 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_ranges  0x00000000000001b0       0x38 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_ranges  0x00000000000001e8       0x10 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_ranges  0x00000000000001f8       0x10 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_ranges  0x0000000000000208       0x10 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_ranges  0x0000000000000218       0x10 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_ranges  0x0000000000000228       0x10 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+
+.debug_line     0x0000000000000000     0x20ca
+ .debug_line    0x0000000000000000      0x373 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_line    0x0000000000000373       0x4f build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .debug_line    0x00000000000003c2      0x187 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_line    0x0000000000000549      0x299 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_line    0x00000000000007e2      0x2f6 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_line    0x0000000000000ad8      0x2f6 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_line    0x0000000000000dce      0x153 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_line    0x0000000000000f21      0x21a build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_line    0x000000000000113b      0x2aa build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_line    0x00000000000013e5      0x151 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_line    0x0000000000001536      0x172 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_line    0x00000000000016a8      0x1ef build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_line    0x0000000000001897      0x2df build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_line    0x0000000000001b76       0xd8 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_line    0x0000000000001c4e      0x11d c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_line    0x0000000000001d6b      0x2ae c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_line    0x0000000000002019       0xb1 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+
+.debug_str      0x0000000000000000      0x3b6
+ .debug_str     0x0000000000000000       0x70 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_str     0x0000000000000070        0x0 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+ .debug_str     0x0000000000000070        0xa build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_str     0x000000000000007a       0x22 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_str     0x000000000000009c       0x29 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_str     0x00000000000000c5       0x29 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_str     0x00000000000000ee        0x0 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_str     0x00000000000000ee       0x50 build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_str     0x000000000000013e       0x73 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_str     0x00000000000001b1        0x0 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_str     0x00000000000001b1        0x0 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_str     0x00000000000001b1       0x6b build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_str     0x000000000000021c       0x86 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_str     0x00000000000002a2        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_str     0x00000000000002a2        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_str     0x00000000000002a2      0x114 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+
+.debug_frame    0x0000000000000000      0x5d8
+ .debug_frame   0x0000000000000000       0x94 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+ .debug_frame   0x0000000000000094       0x20 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+ .debug_frame   0x00000000000000b4       0xc0 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+ .debug_frame   0x0000000000000174       0xf8 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+ .debug_frame   0x000000000000026c       0xf8 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+ .debug_frame   0x0000000000000364       0x20 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+ .debug_frame   0x0000000000000384       0xac build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+ .debug_frame   0x0000000000000430       0x28 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+ .debug_frame   0x0000000000000458       0x20 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+ .debug_frame   0x0000000000000478       0x70 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+ .debug_frame   0x00000000000004e8       0x28 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+ .debug_frame   0x0000000000000510       0x30 build/sam_g55_xpro/production/_ext/1360937237/main.o
+ .debug_frame   0x0000000000000540       0x2c c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_frame   0x000000000000056c       0x2c c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000598       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000000005b8       0x20 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+
+.stack          0x00000000200004a0      0x100
+ .stack         0x00000000200004a0      0x100 stack
+
+.data.messageStart%1
+                0x00000000200001f0       0x3b
+ .data.messageStart
+                0x00000000200001f0       0x3b build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x00000000200001f0                messageStart
+
+.data.errorMessage%2
+                0x000000002000022c       0x2f
+ .data.errorMessage
+                0x000000002000022c       0x2f build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x000000002000022c                errorMessage
+
+.bss%3          0x000000002000025c       0x1c
+ .bss           0x000000002000025c       0x1c c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+
+.data.image%4   0x0000000020000278        0x4
+ .data.image    0x0000000020000278        0x4 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x0000000020000278                image
+
+.data.image_size%5
+                0x000000002000027c        0x4
+ .data.image_size
+                0x000000002000027c        0x4 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x000000002000027c                image_size
+
+.bss.flash_id%6
+                0x0000000020000280        0x2
+ .bss.flash_id  0x0000000020000280        0x2 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x0000000020000280                flash_id
+
+.bss.data%7     0x000000002000022b        0x1
+ .bss.data      0x000000002000022b        0x1 build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x000000002000022b                data
+
+.bss.rxCounter%8
+                0x000000002000025b        0x1
+ .bss.rxCounter
+                0x000000002000025b        0x1 build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x000000002000025b                rxCounter
+
+.eh_frame%z1    0x0000000000000000        0x0
+ .eh_frame      0x0000000000000000        0x0 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+
+.rodata.IS1678_reHex%9
+                0x0000000000400128    0x50000
+ .rodata.IS1678_reHex
+                0x0000000000400128    0x50000 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+                0x0000000000400128                IS1678_reHex
+
+.text.BM78_DFU%10
+                0x0000000000450128      0x5a0
+ .text.BM78_DFU
+                0x0000000000450128      0x5a0 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x0000000000450128                BM78_DFU
+
+.rodata.crc_table%11
+                0x00000000004506c8      0x200
+ .rodata.crc_table
+                0x00000000004506c8      0x200 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+
+.text.main%12   0x00000000004508c8      0x12c
+ .text.main     0x00000000004508c8      0x12c build/sam_g55_xpro/production/_ext/1360937237/main.o
+                0x00000000004508c8                main
+
+.dinit%13       0x00000000004509f4      0x100
+ .dinit         0x00000000004509f4      0x100 data_init
+
+.text.CLOCK_Initialize%14
+                0x0000000000450af4       0xa4
+ .text.CLOCK_Initialize
+                0x0000000000450af4       0xa4 build/sam_g55_xpro/production/_ext/852904278/plib_clock.o
+                0x0000000000450af4                CLOCK_Initialize
+
+.text.Reset_Handler%15
+                0x0000000000450b98       0x98
+ .text.Reset_Handler
+                0x0000000000450b98       0x98 build/sam_g55_xpro/production/_ext/712618688/startup_xc32.o
+                0x0000000000450b98                Reset_Handler
+
+.text.__pic32c_data_initialization%16
+                0x0000000000450c30       0x80
+ .text.__pic32c_data_initialization
+                0x0000000000450c30       0x80 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+                0x0000000000450c30                __pic32c_data_initialization
+
+.text.PIO_Initialize%17
+                0x0000000000450cb0       0x6c
+ .text.PIO_Initialize
+                0x0000000000450cb0       0x6c build/sam_g55_xpro/production/_ext/749962034/plib_pio.o
+                0x0000000000450cb0                PIO_Initialize
+
+.text.BM78_DFU_ReadResponse%18
+                0x0000000000450d1c       0x6a
+ .text.BM78_DFU_ReadResponse
+                0x0000000000450d1c       0x6a build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x0000000000450d1c                BM78_DFU_ReadResponse
+
+.text.FLEXCOM7_USART_Read%19
+                0x0000000000450d88       0x54
+ .text.FLEXCOM7_USART_Read
+                0x0000000000450d88       0x54 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+                0x0000000000450d88                FLEXCOM7_USART_Read
+
+.text.FLEXCOM0_USART_Read%20
+                0x0000000000450ddc       0x54
+ .text.FLEXCOM0_USART_Read
+                0x0000000000450ddc       0x54 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+                0x0000000000450ddc                FLEXCOM0_USART_Read
+
+.text.__libc_init_array%21
+                0x0000000000450e30       0x48
+ .text.__libc_init_array
+                0x0000000000450e30       0x48 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+                0x0000000000450e30                __libc_init_array
+
+.text.FLEXCOM7_USART_ErrorGet%22
+                0x0000000000450e78       0x44
+ .text.FLEXCOM7_USART_ErrorGet
+                0x0000000000450e78       0x44 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+                0x0000000000450e78                FLEXCOM7_USART_ErrorGet
+
+.text.FLEXCOM0_USART_ErrorGet%23
+                0x0000000000450ebc       0x44
+ .text.FLEXCOM0_USART_ErrorGet
+                0x0000000000450ebc       0x44 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+                0x0000000000450ebc                FLEXCOM0_USART_ErrorGet
+
+.text%24        0x0000000000450f00       0x40
+ .text          0x0000000000450f00       0x40 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+
+.text.FLEXCOM7_USART_Write%25
+                0x0000000000450f40       0x3c
+ .text.FLEXCOM7_USART_Write
+                0x0000000000450f40       0x3c build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+                0x0000000000450f40                FLEXCOM7_USART_Write
+
+.text.FLEXCOM0_USART_Write%26
+                0x0000000000450f7c       0x3c
+ .text.FLEXCOM0_USART_Write
+                0x0000000000450f7c       0x3c build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+                0x0000000000450f7c                FLEXCOM0_USART_Write
+
+.rodata%27      0x0000000000450fb8       0x3c
+ .rodata        0x0000000000450fb8       0x3c build/sam_g55_xpro/production/_ext/1360937237/main.o
+
+.text.crc_calc%28
+                0x0000000000450ff4       0x30
+ .text.crc_calc
+                0x0000000000450ff4       0x30 build/sam_g55_xpro/production/_ext/190501242/BM78_DFU.o
+                0x0000000000450ff4                crc_calc
+
+.text.SYS_Initialize%29
+                0x0000000000451024       0x28
+ .text.SYS_Initialize
+                0x0000000000451024       0x28 build/sam_g55_xpro/production/_ext/712618688/initialization.o
+                0x0000000000451024                SYS_Initialize
+
+.text.FLEXCOM7_USART_Initialize%30
+                0x000000000045104c       0x24
+ .text.FLEXCOM7_USART_Initialize
+                0x000000000045104c       0x24 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+                0x000000000045104c                FLEXCOM7_USART_Initialize
+
+.text.FLEXCOM0_USART_Initialize%31
+                0x0000000000451070       0x24
+ .text.FLEXCOM0_USART_Initialize
+                0x0000000000451070       0x24 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+                0x0000000000451070                FLEXCOM0_USART_Initialize
+
+.text.NVIC_Initialize%32
+                0x0000000000451094       0x24
+ .text.NVIC_Initialize
+                0x0000000000451094       0x24 build/sam_g55_xpro/production/_ext/1773939398/plib_nvic.o
+                0x0000000000451094                NVIC_Initialize
+
+.text%33        0x00000000004510b8       0x14
+ .text          0x00000000004510b8       0x14 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-strcmp.o)
+                0x00000000004510b8                strcmp
+
+.text.EFC_Initialize%34
+                0x00000000004510cc       0x10
+ .text.EFC_Initialize
+                0x00000000004510cc       0x10 build/sam_g55_xpro/production/_ext/749951358/plib_efc.o
+                0x00000000004510cc                EFC_Initialize
+
+.text.FLEXCOM7_USART_ReceiverIsReady%35
+                0x00000000004510dc       0x10
+ .text.FLEXCOM7_USART_ReceiverIsReady
+                0x00000000004510dc       0x10 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom7_usart.o
+                0x00000000004510dc                FLEXCOM7_USART_ReceiverIsReady
+
+.text.FLEXCOM0_USART_ReceiverIsReady%36
+                0x00000000004510ec       0x10
+ .text.FLEXCOM0_USART_ReceiverIsReady
+                0x00000000004510ec       0x10 build/sam_g55_xpro/production/_ext/91863110/plib_flexcom0_usart.o
+                0x00000000004510ec                FLEXCOM0_USART_ReceiverIsReady
+
+.text.memset%37
+                0x00000000004510fc       0x10
+ .text.memset   0x00000000004510fc       0x10 c:/program files/microchip/xc32/v2.50/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+                0x00000000004510fc                memset
+
+.rodata.IS1678_reHex_size%38
+                0x000000000045110c        0x4
+ .rodata.IS1678_reHex_size
+                0x000000000045110c        0x4 build/sam_g55_xpro/production/_ext/190501242/IS1678_DUAL_SPP_SHADOW_reHex.o
+                0x000000000045110c                IS1678_reHex_size
+
+.text.Dummy_Handler%39
+                0x0000000000450d86        0x2
+ .text.Dummy_Handler
+                0x0000000000450d86        0x2 build/sam_g55_xpro/production/_ext/712618688/interrupts.o
+                0x0000000000450d86                FLEXCOM1_Handler
+                0x0000000000450d86                SVCall_Handler
+                0x0000000000450d86                TC0_CH2_Handler
+                0x0000000000450d86                FLEXCOM4_Handler
+                0x0000000000450d86                SysTick_Handler
+                0x0000000000450d86                PendSV_Handler
+                0x0000000000450d86                TC0_CH1_Handler
+                0x0000000000450d86                ADC_Handler
+                0x0000000000450d86                CRCCU_Handler
+                0x0000000000450d86                TC1_CH2_Handler
+                0x0000000000450d86                RTT_Handler
+                0x0000000000450d86                FLEXCOM6_Handler
+                0x0000000000450d86                PIOB_Handler
+                0x0000000000450d86                RTC_Handler
+                0x0000000000450d86                PDMIC1_Handler
+                0x0000000000450d86                WDT_Handler
+                0x0000000000450d86                Dummy_Handler
+                0x0000000000450d86                PIOA_Handler
+                0x0000000000450d86                MEM2MEM_Handler
+                0x0000000000450d86                TC1_CH0_Handler
+                0x0000000000450d86                PMC_Handler
+                0x0000000000450d86                PDMIC0_Handler
+                0x0000000000450d86                SUPC_Handler
+                0x0000000000450d86                FLEXCOM7_InterruptHandler
+                0x0000000000450d86                UHP_Handler
+                0x0000000000450d86                EFC_Handler
+                0x0000000000450d86                FLEXCOM0_InterruptHandler
+                0x0000000000450d86                TC1_CH1_Handler
+                0x0000000000450d86                I2SC0_Handler
+                0x0000000000450d86                I2SC1_Handler
+                0x0000000000450d86                TC0_CH0_Handler
+                0x0000000000450d86                FLEXCOM2_Handler
+                0x0000000000450d86                UDP_Handler
+                0x0000000000450d86                FLEXCOM3_Handler
+                0x0000000000450d86                RSTC_Handler
+                0x0000000000450d86                FLEXCOM5_Handler
+
+.text.NonMaskableInt_Handler%40
+                0x0000000000451110        0x2
+ .text.NonMaskableInt_Handler
+                0x0000000000451110        0x2 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+                0x0000000000451110                NonMaskableInt_Handler
+
+.text.HardFault_Handler%41
+                0x0000000000451112        0x2
+ .text.HardFault_Handler
+                0x0000000000451112        0x2 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+                0x0000000000451112                HardFault_Handler
+
+.text.DebugMonitor_Handler%42
+                0x0000000000451114        0x2
+ .text.DebugMonitor_Handler
+                0x0000000000451114        0x2 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+                0x0000000000451114                DebugMonitor_Handler
+
+.text.MemoryManagement_Handler%43
+                0x0000000000451116        0x2
+ .text.MemoryManagement_Handler
+                0x0000000000451116        0x2 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+                0x0000000000451116                MemoryManagement_Handler
+
+.text.BusFault_Handler%44
+                0x0000000000451118        0x2
+ .text.BusFault_Handler
+                0x0000000000451118        0x2 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+                0x0000000000451118                BusFault_Handler
+
+.text.UsageFault_Handler%45
+                0x000000000045111a        0x2
+ .text.UsageFault_Handler
+                0x000000000045111a        0x2 build/sam_g55_xpro/production/_ext/712618688/exceptions.o
+                0x000000000045111a                UsageFault_Handler
